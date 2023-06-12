@@ -9,15 +9,12 @@
  * 
  */
 UCLASS()
-class TEKKENGAME_API UCustomizeCharacterItemFactory : public UFactory
+class UCustomizeCharacterItemFactory : public UFactory
 {
 	GENERATED_BODY()
 	
 public:
 	UCustomizeCharacterItemFactory();
-
-	// Begin UFactory Interface
-	virtual uint32 GetMenuCategories() const override;
 
 	virtual UObject* FactoryCreateNew(UClass* Class, UObject* InParent, FName Name, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn) override;
 	// End UFactory Interface
